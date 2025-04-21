@@ -466,7 +466,7 @@ const Products = () => {
           {filteredProducts.map((product) => (
             <Card
               key={product.id}
-              className="overflow-hidden transition-all hover:shadow-md"
+              className="overflow-hidden transition-all hover:shadow-md p-0"
             >
               <div className="aspect-square overflow-hidden">
                 <Image
@@ -481,7 +481,7 @@ const Products = () => {
                 <div className="flex justify-between mb-2">
                   <div>
                     <h3 className="font-semibold text-lg">{product.name}</h3>
-                    <p className="text-sm text-gray-500">{product.category}</p>
+                    {/* <p className="text-sm text-gray-500">{product.category}</p> */}
                   </div>
                 </div>
               </CardContent>
