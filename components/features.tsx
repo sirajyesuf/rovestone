@@ -1,8 +1,8 @@
-import { CreditCard, Headphones, ShoppingCart, Wallet } from "lucide-react"
+import { CreditCard, Headphones, ShoppingCart, Wallet } from "lucide-react";
 
 export default function FeatureHighlights() {
   return (
-    <div className="w-full py-16 bg-white">
+    <div className="w-full py-4  bg-white border-none ">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Free Shipping */}
@@ -11,7 +11,7 @@ export default function FeatureHighlights() {
               <ShoppingCart className="h-10 w-10 text-[#db462f]" />
             </div>
             <div>
-              <h3 className="font-bold text-[#1a2340]">Free Shipping</h3>
+              <h3 className="font-bold text-[#1a2340]">Customer Values</h3>
               <p className="text-sm text-[#1a2340]/80">Orders over $100</p>
             </div>
           </div>
@@ -51,5 +51,5 @@ export default function FeatureHighlights() {
         </div>
       </div>
     </div>
-  )
+  );
 }

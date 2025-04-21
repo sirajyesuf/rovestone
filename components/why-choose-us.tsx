@@ -1,9 +1,9 @@
-import Image from "next/image"
-import { ChevronLeft, ChevronRight, Check } from "lucide-react"
+import { Check } from "lucide-react";
+import Image from "next/image";
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full bg-[#f8f6fb] py-16">
+    <section className="w-full  py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-6xl">
           {/* Navigation Arrows */}
@@ -26,50 +26,59 @@ export default function WhyChooseUs() {
             {/* Image */}
             <div className="overflow-hidden rounded-lg">
               <Image
-                src="kitchen.jpg"
+                src="/kitchen.jpg"
                 alt="Modern living room with yellow accent chair"
                 width={800}
                 height={600}
-                className="h-auto w-full object-cover"
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
 
             {/* Text Content */}
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">Why Choose Rovestone Brothers?</h2>
+              <h2 className="text-3xl font-bold text-gray-900">
+                Why Choose Rovestone Brothers?
+              </h2>
 
               <p className="text-gray-700">
-                At Rovestone Brothers, we're committed to providing exceptional furniture that enhances your home's beauty and
-                comfort. Each piece is thoughtfully designed and built to last.
+                At Rovestone Brothers, we&apos;re passionate about providing exceptional
+                furniture that enhances your home&apos;s beauty and comfort. Each
+                piece is thoughtfully designed and built to last.
               </p>
 
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#b4a7e4]">
+                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#D32F2F]">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <span className="text-gray-700">Handcrafted with premium materials</span>
+                  <span className="text-gray-700">
+                    Handcrafted with premium materials
+                  </span>
                 </li>
 
                 <li className="flex items-center">
-                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#b4a7e4]">
+                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#D32F2F]">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <span className="text-gray-700">Free delivery within 100 miles</span>
+                  <span className="text-gray-700">
+                    Free delivery within 100 miles
+                  </span>
                 </li>
 
                 <li className="flex items-center">
-                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#b4a7e4]">
+                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#D32F2F]">
                     <Check className="h-4 w-4 text-white" />
                   </div>
                   <span className="text-gray-700">30-day return policy</span>
                 </li>
 
                 <li className="flex items-center">
-                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#b4a7e4]">
+                  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#D32F2F]">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <span className="text-gray-700">5-year warranty on all products</span>
+                  <span className="text-gray-700">
+                    5-year warranty on all products
+                  </span>
                 </li>
               </ul>
             </div>
@@ -77,5 +86,5 @@ export default function WhyChooseUs() {
         </div>
       </div>
     </section>
-  )
+  );
 }

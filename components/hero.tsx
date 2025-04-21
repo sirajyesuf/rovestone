@@ -1,10 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Phone } from "lucide-react"
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <div className="flex flex-col">
+    <div className="flex  flex-col">
       {/* Navigation Bar */}
       {/* <header className="w-full bg-white py-4 px-6">
         <div className="container mx-auto flex items-center justify-between">
@@ -72,7 +70,7 @@ export default function Hero() {
         </div>
       </section> */}
 
-        <section className="relative bg-gradient-to-r from-[#3f232c] to-[#d32f2f]/90 text-white">
+      <section className="relative bg-gradient-to-r from-[#3f232c] to-[#d32f2f]/90 text-white">
         <div className="container mx-auto px-4 py-24 md:py-32">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="max-w-xl">
@@ -80,11 +78,12 @@ export default function Hero() {
                 Cherished Craftsmanship for Your Space
               </h1>
               <p className="text-lg mb-4 text-gray-200 italic">
-                "It's all about the details"
+                &quot;It&apos;s all about the details&quot;
               </p>
               <p className="text-lg mb-8 text-gray-200">
-                We create unique spaces for both residential and commercial clients, 
-                combining traditional artisanship with cutting-edge technology.
+                We create unique spaces for both residential and commercial
+                clients, combining traditional artisanship with cutting-edge
+                technology.
               </p>
               {/* <div className="flex flex-wrap gap-4">
                 <Link href="/products">
@@ -100,9 +99,12 @@ export default function Hero() {
               </div> */}
             </div>
             <div className="hidden md:block">
-              <img 
-                src="greencouch.jpg" 
-                alt="Rovestone Brothers Furniture" 
+              <Image
+
+              width={1920}
+              height={1080}
+                src="greencouch.jpg"
+                alt="Rovestone Brothers Furniture"
                 className="rounded-md shadow-none"
               />
             </div>
@@ -121,5 +123,5 @@ export default function Hero() {
         </div>
       </section> */}
     </div>
-  )
+  );
 }

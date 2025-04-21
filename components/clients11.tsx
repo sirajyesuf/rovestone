@@ -5,12 +5,13 @@ interface ClientLogo {
   logoUrl: string;
 }
 import { useRef } from "react";
+import Image from "next/image";
 
 const clients: ClientLogo[] = [
   {
     id: 1,
     name: "Nordic Design Co.",
-    logoUrl: 'haile.png'
+    logoUrl: 'Haile_Resorts.png'
   },
   {
     id: 2,
@@ -52,7 +53,9 @@ const ClientLogoItem: React.FC<ClientLogoItemProps> = ({ client }) => {
   return (
     <div className="logo-item flex-shrink-0 mx-6 my-4">
       <div className="h-24 w-40 flex items-center justify-center p-2 bg-white rounded-lg shadow-sm border border-gray-200">
-        <img
+        <Image
+              width={200}
+              height={100}
           src={client.logoUrl}
           alt={`${client.name} logo`}
           className="max-h-24 max-w-full object-contain"
@@ -111,7 +114,7 @@ function ClientSection() {
           </h2>
           <div className="w-24 h-1 bg-[#af3f41] mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We're proud to collaborate with these prestigious brands who trust
+            We&apos;re proud to have worked with these prestigious brands who trust
             our craftsmanship and design philosophy.
           </p>
         </div>

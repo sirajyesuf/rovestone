@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 // Sample client data (replace with actual client logos)
 const clients = [
@@ -48,7 +49,9 @@ const Partners = () => {
                 className="flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                 style={{ borderColor: '#db462f', borderWidth: '1px' }}
               >
-                <img
+                <Image
+                width={200}
+                height={100}
                   src={client.logo}
                   alt={client.name}
                   className="max-h-16 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
