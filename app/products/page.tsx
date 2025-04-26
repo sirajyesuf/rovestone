@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import NavBar from "@/components/nav-bar";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent,CardFooter } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -350,6 +350,19 @@ const products = [
     image: "/products/partitionwork3.png",
     name: "Partition Work 3",
   },
+
+  {
+    id: 49,
+    category: "traditional_kitchen",
+    image: "/products/traditionalkitchen3.png",
+    name: "Traditional Kitchen 3",
+  },
+  {
+    id: 50,
+    category: "traditional_kitchen",
+    image: "/products/traditionalkitchen4.png",
+    name: "Traditional Kitchen 4",
+  },
 ];
 
 const Products = () => {
@@ -376,7 +389,8 @@ const Products = () => {
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200">
             Browse our carefully crafted selection of bespoke furniture pieces
-            designed with cherished craftsmanship andWe&apos;re passionate about the details.
+            designed with cherished craftsmanship andWe&apos;re passionate about
+            the details.
           </p>
         </div>
       </div>
@@ -390,9 +404,10 @@ const Products = () => {
             </h2>
             <p className="text-lg mb-8 text-gray-700">
               At Rovestone Brothers, we create bespoke furniture for every room
-              of the home or office. We&apos;re committed to our beautiful kitchens,
-              dressing rooms, and specialist joinery. Each piece is carefully
-              designed and crafted to meet our clients&apos; specific needs.
+              of the home or office. We&apos;re committed to our beautiful
+              kitchens, dressing rooms, and specialist joinery. Each piece is
+              carefully designed and crafted to meet our clients&apos; specific
+              needs.
             </p>
           </div>
         </div>
@@ -486,9 +501,8 @@ const Products = () => {
                 </div>
               </CardContent>
               {/* <CardFooter>
-                <Button className="w-full bg-[#7E69AB] hover:bg-[#6E59A5]">
-                  Add to Cart
-                </Button>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Asperiores possimus dolore praesentium.
               </CardFooter> */}
             </Card>
           ))}
