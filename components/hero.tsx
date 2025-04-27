@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+
+  const t = useTranslations("Hero");
+  console.log("Hero component rendered");
+
   return (
     <div className="flex  flex-col">
       {/* Navigation Bar */}
@@ -75,16 +80,11 @@ export default function Hero() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="max-w-xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                Cherished Craftsmanship for Your Space
+                {/* Cherished Craftsmanship for Your Space */}
+                {t("title")}
               </h1>
-              <p className="text-lg mb-4 text-gray-200 italic">
-                &quot;It&apos;s all about the details&quot;
-              </p>
-              <p className="text-lg mb-8 text-gray-200">
-                We create unique spaces for both residential and commercial
-                clients, combining traditional artisanship with cutting-edge
-                technology.
-              </p>
+              <p className="text-lg mb-4 text-gray-200 italic">{t("slogan")}</p>
+              <p className="text-lg mb-8 text-gray-200">{t("description")}</p>
               {/* <div className="flex flex-wrap gap-4">
                 <Link href="/products">
                   <Button className="bg-white text-[#D32F2F] hover:bg-gray-100 px-6 py-2 rounded-md text-lg">
@@ -100,9 +100,8 @@ export default function Hero() {
             </div>
             <div className="hidden md:block">
               <Image
-
-              width={1920}
-              height={1080}
+                width={1920}
+                height={1080}
                 src="greencouch.jpg"
                 alt="Rovestone Brothers Furniture"
                 className="rounded-md shadow-none"

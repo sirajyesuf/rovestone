@@ -1,0 +1,40 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, am {🇩🇪 Amharic} en {🇺🇸 English} other {Unknown}}"
+  },
+
+  "Hero": {
+    "title": "Cherished Craftsmanship for Your Space",
+    "description": "We create unique spaces for both residential and commercial clients, combining traditional artisanship with cutting-edge technology.",
+    "slogan": "It's all about the details",
+    "button": "Browse Collection"
+  },
+  "WhyChooseUs": {
+    "title": "Why Choose Rovestone Brothers?",
+    "description": "At Rovestone Brothers, we're passionate about providing exceptional furniture that enhances your home's beauty and comfort. Each piece is thoughtfully designed and built to last",
+    "whychooseusList": {
+      "1": "Expert Craftsmanship",
+      "2": "Sustainable Materials",
+      "3": "Custom Designs",
+      "4": "Exceptional Service"
+    }
+  },
+  "OurTrustedClients": {
+    "title": "Our Trusted Clients",
+    "description": "We're proud to have worked with these prestigious brands who trust our craftsmanship and design philosophy."
+  },
+  "GetInTouch": {
+    "title": "Get in Touch",
+    "description": "Have a question or want to discuss a project? We're here to help! Fill out the form below and we'll get back to you as soon as possible.",
+    "button": "Subscribe"
+  },
+  "Cta": {
+    "title": "Ready to Transform Your Space?",
+    "description": "Contact us today to discuss your project and discover how we can bring your vision to life.",
+    "button": "Contact Us"
+  },
+  "Footer": {
+    "description": "Rovestone Brothers is a family-owned business dedicated to creating beautiful, functional furniture that enhances your home. Our commitment to quality and craftsmanship is evident in every piece we create."
+  }
+}

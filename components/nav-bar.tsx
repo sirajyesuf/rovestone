@@ -1,10 +1,15 @@
-'use client';
+"use client";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import LanguageSwitcher from "@/components/language-switcher";
+import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations("Hero");
+  console.log("NavBar component rendered");
 
   return (
     <div className=" flex flex-col bg-white">
@@ -14,6 +19,7 @@ export default function NavBar() {
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl font-bold text-[#D32F2F]">Rovestone</span>
             <span className="text-xl font-medium text-[#1A1F2C]">Brothers</span>
+            {t("title")}
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,16 +47,18 @@ export default function NavBar() {
               <Phone size={18} />
               <span>Contact Us</span>
             </a> */}
-            <Link href="/products">
+            {/* <Link href="/products">
               <button className="bg-[#D32F2F] text-white px-4 py-2 rounded-md hover:bg-[#B71C1C] transition-colors">
                 Contact Us
               </button>
-            </Link>
+            </Link> */}
+
+            {/* <LanguageSwitcher /> */}
+            <LocaleSwitcher/>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4 md:hidden">
-
             <button
               className="p-2 rounded-full hover:bg-gray-100"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -78,13 +86,7 @@ export default function NavBar() {
               >
                 Products
               </Link>
-              {/* <a
-                href="mailto:info@rovestone.com"
-                className="py-2 font-medium text-gray-700 hover:text-[#D32F2F] transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Contact Us
-              </a> */}
+              <LanguageSwitcher />
             </div>
           </div>
         )}

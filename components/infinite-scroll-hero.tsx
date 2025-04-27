@@ -167,7 +167,7 @@ export default function FurnitureCarousel() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-white drop-shadow-md mb-4">
           Cherished Craftsmanship for Your Space
         </h1>
-        <p className="max-w-[700px] text-lg md:text-xl text-white/90 drop-shadow mb-8">
+        {/* <p className="max-w-[700px] text-lg md:text-xl text-white/90 drop-shadow mb-8">
           <p className="text-lg mb-4 text-gray-200 italic">
             &quot;It&apos;s all about the details&quot;
           </p>
@@ -175,7 +175,7 @@ export default function FurnitureCarousel() {
             We create unique spaces for both residential and commercial clients,
             combining traditional artisanship with cutting-edge technology.
           </p>
-        </p>
+        </p> */}
         <div className="flex flex-col sm:flex-row gap-4">
           <Button size="lg" asChild>
             <Link href="/products">Browse Collection</Link>
