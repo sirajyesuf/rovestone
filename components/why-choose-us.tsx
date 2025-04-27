@@ -1,7 +1,10 @@
 import { Check } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function WhyChooseUs() {
+  const t = useTranslations("WhyChooseUs");
+
   return (
     <section className="w-full  py-16">
       <div className="container mx-auto px-4 md:px-6">
@@ -37,13 +40,15 @@ export default function WhyChooseUs() {
             {/* Text Content */}
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-gray-900">
-                Why Choose Rovestone Brothers?
+                {/* Why Choose Rovestone Brothers? */}
+                {t("title")}
               </h2>
 
               <p className="text-gray-700">
-                At Rovestone Brothers, we&apos;re passionate about providing exceptional
+                {/* At Rovestone Brothers, we&apos;re passionate about providing exceptional
                 furniture that enhances your home&apos;s beauty and comfort. Each
-                piece is thoughtfully designed and built to last.
+                piece is thoughtfully designed and built to last. */}
+                {t("description")}
               </p>
 
               <ul className="space-y-4">
@@ -52,7 +57,8 @@ export default function WhyChooseUs() {
                     <Check className="h-4 w-4 text-white" />
                   </div>
                   <span className="text-gray-700">
-                    Handcrafted with premium materials
+                    {/* Handcrafted with premium materials */}
+                    {t("whychooseusList1")}
                   </span>
                 </li>
 
@@ -61,7 +67,8 @@ export default function WhyChooseUs() {
                     <Check className="h-4 w-4 text-white" />
                   </div>
                   <span className="text-gray-700">
-                    Free delivery within 100 miles
+                    {/* Free delivery within 100 miles */}
+                    {t("whychooseusList2")}
                   </span>
                 </li>
 
@@ -69,7 +76,10 @@ export default function WhyChooseUs() {
                   <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#D32F2F]">
                     <Check className="h-4 w-4 text-white" />
                   </div>
-                  <span className="text-gray-700">30-day return policy</span>
+                  <span className="text-gray-700">
+                    {/* 30-day return policy */}
+                    {t("whychooseusList3")}
+                  </span>
                 </li>
 
                 <li className="flex items-center">
@@ -77,7 +87,8 @@ export default function WhyChooseUs() {
                     <Check className="h-4 w-4 text-white" />
                   </div>
                   <span className="text-gray-700">
-                    5-year warranty on all products
+                    {/* 5-year warranty on all products */}
+                    {t("whychooseusList4")}
                   </span>
                 </li>
               </ul>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import NavBar from "@/components/nav-bar";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent,CardFooter } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -16,6 +16,7 @@ import { useState } from "react";
 import { Filter } from "lucide-react";
 import Footer from "@/components/footer";
 import VisitShowRoom from "@/components/visit-showroom";
+import { useTranslations } from "next-intl";
 
 const categories = [
   {
@@ -368,6 +369,9 @@ const products = [
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all_products");
 
+  const t = useTranslations("ProductsHero");
+  const t2 = useTranslations("Products");
+
   const filteredProducts = products.filter((product) =>
     selectedCategory === "all_products"
       ? true
@@ -385,12 +389,14 @@ const Products = () => {
       <div className="bg-gradient-to-r from-[#1A1F2C] to-[#D32F2F] text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Our Product Collection
+            {/* Our Product Collection */}
+            {t("title")}
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200">
-            Browse our carefully crafted selection of bespoke furniture pieces
+            {/* Browse our carefully crafted selection of bespoke furniture pieces
             designed with cherished craftsmanship andWe&apos;re passionate about
-            the details.
+            the details. */}
+            {t("description")}
           </p>
         </div>
       </div>
@@ -400,14 +406,16 @@ const Products = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-bold mb-4 text-[#1A1F2C]">
-              Bespoke Furniture & Joinery
+              {/* Bespoke Furniture & Joinery */}
+              {t2("title")}
             </h2>
             <p className="text-lg mb-8 text-gray-700">
-              At Rovestone Brothers, we create bespoke furniture for every room
+              {/* At Rovestone Brothers, we create bespoke furniture for every room
               of the home or office. We&apos;re committed to our beautiful
               kitchens, dressing rooms, and specialist joinery. Each piece is
               carefully designed and crafted to meet our clients&apos; specific
-              needs.
+              needs. */}
+              {t2("description")}
             </p>
           </div>
         </div>

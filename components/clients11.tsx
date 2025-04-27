@@ -6,7 +6,7 @@ interface ClientLogo {
 }
 import { useRef } from "react";
 import Image from "next/image";
-
+import { useTranslations } from "next-intl";
 const clients: ClientLogo[] = [
   {
     id: 1,
@@ -105,17 +105,21 @@ const LogoScroller: React.FC<LogoScrollerProps> = ({ clients }) => {
 };
 
 function ClientSection() {
+  const t = useTranslations("OurTrustedClients");
+
   return (
     <section className="py-16 bg-stone-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
-            Our Trusted Clients
+            {/* Our Trusted Clients */}
+            {t("title")}
           </h2>
           <div className="w-24 h-1 bg-[#af3f41] mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We&apos;re proud to have worked with these prestigious brands who trust
-            our craftsmanship and design philosophy.
+            {/* We&apos;re proud to have worked with these prestigious brands who trust
+            our craftsmanship and design philosophy. */}
+            {t("description")}
           </p>
         </div>
 

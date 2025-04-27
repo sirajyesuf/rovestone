@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function FurnitureCarousel() {
   // Array of furniture images from Unsplash
@@ -41,7 +42,7 @@ export default function FurnitureCarousel() {
   const prevSlide = useCallback(() => {
     setCurrentIndex(
       (prevIndex) =>
-        (prevIndex - 1 + furnitureImages.length) % furnitureImages.length,
+        (prevIndex - 1 + furnitureImages.length) % furnitureImages.length
     );
   }, [furnitureImages.length]);
 
@@ -88,6 +89,8 @@ export default function FurnitureCarousel() {
     setIsAutoPlaying(false);
     setTimeout(() => setIsAutoPlaying(true), 5000);
   };
+
+  const t = useTranslations("Hero");
 
   return (
     <div
@@ -165,20 +168,23 @@ export default function FurnitureCarousel() {
       {/* Hero content */}
       <div className="relative z-[20] flex flex-col items-center justify-center h-full text-center px-4 md:px-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-white drop-shadow-md mb-4">
-          Cherished Craftsmanship for Your Space
+          {/* Cherished Craftsmanship for Your Space */}
+          {t("title")}
         </h1>
-        {/* <p className="max-w-[700px] text-lg md:text-xl text-white/90 drop-shadow mb-8">
+        <p className="max-w-[700px] text-lg md:text-xl text-white/90 drop-shadow mb-8">
           <p className="text-lg mb-4 text-gray-200 italic">
-            &quot;It&apos;s all about the details&quot;
+            {/* &quot;It&apos;s all about the details&quot; */}
+            {t("slogan")}
           </p>
           <p className="text-lg mb-8 text-gray-200">
-            We create unique spaces for both residential and commercial clients,
-            combining traditional artisanship with cutting-edge technology.
+            {/* We create unique spaces for both residential and commercial clients,
+            combining traditional artisanship with cutting-edge technology. */}
+            {t("description")}
           </p>
-        </p> */}
+        </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button size="lg" asChild>
-            <Link href="/products">Browse Collection</Link>
+            <Link href="/products">{t("button")}</Link>
           </Button>
           {/* <Button
             size="lg"

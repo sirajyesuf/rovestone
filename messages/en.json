@@ -1,7 +1,7 @@
 {
   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, am {🇩🇪 Amharic} en {🇺🇸 English} other {Unknown}}"
+    "locale": "{locale, select, am {🇪🇹 Amharic} en {🇺🇸 English} other {Unknown}}"
   },
 
   "Hero": {
@@ -13,28 +13,42 @@
   "WhyChooseUs": {
     "title": "Why Choose Rovestone Brothers?",
     "description": "At Rovestone Brothers, we're passionate about providing exceptional furniture that enhances your home's beauty and comfort. Each piece is thoughtfully designed and built to last",
-    "whychooseusList": {
-      "1": "Expert Craftsmanship",
-      "2": "Sustainable Materials",
-      "3": "Custom Designs",
-      "4": "Exceptional Service"
-    }
+    "whychooseusList1": "Expert Craftsmanship",
+    "whychooseusList2": "Eco-Friendly Materials",
+    "whychooseusList3": "Custom Designs",
+    "whychooseusList4": "Customer Service You Can Trust"
   },
   "OurTrustedClients": {
     "title": "Our Trusted Clients",
     "description": "We're proud to have worked with these prestigious brands who trust our craftsmanship and design philosophy."
   },
   "GetInTouch": {
-    "title": "Get in Touch",
-    "description": "Have a question or want to discuss a project? We're here to help! Fill out the form below and we'll get back to you as soon as possible.",
+    "title": "Subscribe to Our Newsletter",
+    "description": "Stay updated with our latest designs, offers, and tips for creating your dream space.",
     "button": "Subscribe"
   },
-  "Cta": {
+  "ContactUs": {
     "title": "Ready to Transform Your Space?",
     "description": "Contact us today to discuss your project and discover how we can bring your vision to life.",
     "button": "Contact Us"
   },
   "Footer": {
     "description": "Rovestone Brothers is a family-owned business dedicated to creating beautiful, functional furniture that enhances your home. Our commitment to quality and craftsmanship is evident in every piece we create."
+  },
+  "FeedBack": {
+    "title": "What Our Clients Say"
+  },
+  "ProductsHero": {
+    "title": "Our Product Collection",
+    "description": "Explore our range of handcrafted furniture designed to elevate your space."
+  },
+  "Products": {
+    "title": "Bespoke Furniture & Joinery",
+    "description": "At Rovestone Brothers, we create bespoke furniture for every room of the home or office. We're committed to our beautiful kitchens, dressing rooms, and specialist joinery. Each piece is carefully designed and crafted to meet our clients' specific needs."
+  },
+  "VisitShowRoom": {
+    "title": "Experience Luxury in Person",
+    "description": "Visit our showroom to explore our complete collection and let our design experts help you create your perfect space. Touch, feel, and experience the quality of our furniture firsthand.",
+    "button": "Visit Our Showroom"
   }
 }

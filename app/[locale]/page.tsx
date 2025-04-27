@@ -1,6 +1,5 @@
 "use client";
 import NavBar from "@/components/nav-bar";
-// import Hero from "@/components/hero";
 import WhyChooseUs from "@/components/why-choose-us";
 import GetInTouch from "@/components/get-in-touch";
 import Footer from "@/components/footer";
@@ -14,7 +13,6 @@ export default function HomePage() {
   return (
     <div>
       <NavBar />
-      {/* <Hero /> */}
       <FurnitureCarousel />
       <GalleryPage />
       <WhyChooseUs />

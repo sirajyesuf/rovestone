@@ -1,13 +1,6 @@
-import { Bell, ChevronDown, Heart, Search } from "lucide-react";
 import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
+
 
 export default function GalleryPage() {
   // Sample furniture gallery data with varying heights

@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export default function FeedBack() {
   // Client testimonial data - replace with your actual client testimonials
@@ -58,11 +59,16 @@ export default function FeedBack() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length)
   }
 
+  const t = useTranslations("FeedBack");
+
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#5c6669] mb-4">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#5c6669] mb-4">
+            {/* What Our Clients Say */}
+            {t("title")}
+          </h2>
           <div className="w-20 h-1 bg-[#db462f] mx-auto"></div>
         </div>
 

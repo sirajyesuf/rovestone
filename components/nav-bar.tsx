@@ -2,14 +2,10 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
-import LanguageSwitcher from "@/components/language-switcher";
-import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const t = useTranslations("Hero");
-  console.log("NavBar component rendered");
 
   return (
     <div className=" flex flex-col bg-white">
@@ -19,7 +15,6 @@ export default function NavBar() {
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl font-bold text-[#D32F2F]">Rovestone</span>
             <span className="text-xl font-medium text-[#1A1F2C]">Brothers</span>
-            {t("title")}
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +49,7 @@ export default function NavBar() {
             </Link> */}
 
             {/* <LanguageSwitcher /> */}
-            <LocaleSwitcher/>
+            <LocaleSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -86,7 +81,8 @@ export default function NavBar() {
               >
                 Products
               </Link>
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
+              <LocaleSwitcher />
             </div>
           </div>
         )}
