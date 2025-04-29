@@ -171,16 +171,14 @@ export default function FurnitureCarousel() {
           {/* Cherished Craftsmanship for Your Space */}
           {t("title")}
         </h1>
-        <p className="max-w-[700px] text-lg md:text-xl text-white/90 drop-shadow mb-8">
-          <p className="text-lg mb-4 text-gray-200 italic">
-            {/* &quot;It&apos;s all about the details&quot; */}
-            {t("slogan")}
-          </p>
-          <p className="text-lg mb-8 text-gray-200">
-            {/* We create unique spaces for both residential and commercial clients,
-            combining traditional artisanship with cutting-edge technology. */}
+        <p className="max-w-[700px] text-lg md:text-xl text-white/90 drop-shadow mb-8 text-lg mb-4 text-gray-200 italic">
+          {/* <p className="text-lg mb-4 text-gray-200 italic"> */}
+          {/* &quot;It&apos;s all about the details&quot; */}
+          {t("slogan")}
+          {/* </p> */}
+          {/* <p className="text-lg mb-8 text-gray-200">
             {t("description")}
-          </p>
+          </p> */}
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button size="lg" asChild>
