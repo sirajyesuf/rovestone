@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import LocaleSwitcher from "./LocaleSwitcher";
-
+import Image from "next/image";
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -12,7 +12,14 @@ export default function NavBar() {
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 w-[50px] h-[50px]">
+            <Image
+              src={"/rovestone.png"}
+              alt="Rovestone Brothers Logo"
+              width={100}
+              height={50}
+              className="w-full h-full"
+            />
             <span className="text-2xl font-bold text-[#D32F2F]">Rovestone</span>
             <span className="text-xl font-medium text-[#1A1F2C]">Brothers</span>
           </Link>
